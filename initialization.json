@@ -1,0 +1,84 @@
+[
+    {
+        "_id": "fnCSl3p87H8FyJx0",
+        "name": "NPCs",
+        "type": "Actor",
+        "parent": "ozkAYjwZ47YAJaWc",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "the-expanse-salvage-op": {
+                "initialization-parent": "Salvage Op"
+            }
+        }
+    },
+    {
+        "_id": "SuLptm0e6BX4XkJX",
+        "name": "Salvage Op",
+        "type": "Item",
+        "parent": null,
+        "sorting": "m",
+        "sort": 0,
+        "color": null,
+        "flags": {}
+    },
+    {
+        "_id": "ozkAYjwZ47YAJaWc",
+        "name": "Salvage Op",
+        "type": "Actor",
+        "parent": null,
+        "sorting": "m",
+        "sort": 300000,
+        "color": null,
+        "flags": {}
+    },
+    {
+        "_id": "t1zp3xnuiehJPcnI",
+        "name": "Salvage Op",
+        "type": "JournalEntry",
+        "parent": null,
+        "sorting": "m",
+        "sort": 0,
+        "color": null,
+        "flags": {}
+    },
+    {
+        "_id": "wGodm7YAh0ywKMJs",
+        "name": "Salvage Op",
+        "type": "Scene",
+        "parent": null,
+        "sorting": "m",
+        "sort": 0,
+        "color": null,
+        "flags": {}
+    },
+    {
+        "_id": "IOyM8a13bJiiJlX1",
+        "name": "Ships",
+        "type": "Actor",
+        "parent": "ozkAYjwZ47YAJaWc",
+        "sorting": "m",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "the-expanse-salvage-op": {
+                "initialization-parent": "Salvage Op"
+            }
+        }
+    },
+    {
+        "_id": "oqxZhtFIAw9ULupK",
+        "name": "Weapons",
+        "type": "Item",
+        "parent": "SuLptm0e6BX4XkJX",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "the-expanse-salvage-op": {
+                "initialization-parent": "Salvage Op"
+            }
+        }
+    }
+]
