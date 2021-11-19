@@ -11,7 +11,7 @@ Hooks.on("init", () => {
         name: "The Expanse Salvage-Op Setup",
         label: "Setup",
         hint: "Import or update the content from The Expanse Salvage-Op Module",
-        type: TheExpanseQSInitWrapper,
+        type: TheExpanseSOInitWrapper,
         restricted: true
     })
 })
@@ -22,7 +22,7 @@ Hooks.on("ready", () => {
     }
 })
 
-class TheExpanseQSInitWrapper extends FormApplication {
+class TheExpanseSOInitWrapper extends FormApplication {
     render() {
         new TheExpanseSOInitialization().render(true);
     }
