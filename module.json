@@ -54,6 +54,7 @@
   "languages": [],
   "minimumCoreVersion": "0.8.1",
   "compatibleCoreVersion": "0.8.8",
+  "protected": true,
   "url": "https://github.com/Foxfyre/the_expanse",
-  "manifest": "https://raw.githubusercontent.com/Foxfyre/the-expanse-salvage-op/main/module.json"
+  "manifest": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/the-expanse-salvage-op/module.json"
 }
