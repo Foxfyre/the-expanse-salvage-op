@@ -18,17 +18,17 @@ Hooks.on("init", () => {
 
 Hooks.on("ready", () => {
     if (!game.settings.get("the-expanse-salvage-op", "initialized") && game.user.isGM) {
-        new TheExpanseQSInitialization().render(true)
+        new TheExpanseSOInitialization().render(true)
     }
 })
 
 class TheExpanseQSInitWrapper extends FormApplication {
     render() {
-        new TheExpanseQSInitialization().render(true);
+        new TheExpanseSOInitialization().render(true);
     }
 }
  
-class TheExpanseQSInitialization extends Dialog {
+class TheExpanseSOInitialization extends Dialog {
     constructor() {
         super({
             title: "The Expanse Salvage-Op Initialization",
@@ -39,14 +39,14 @@ class TheExpanseQSInitialization extends Dialog {
                     label: "Initialize",
                     callback: async () => {
                         game.settings.set("the-expanse-salvage-op", "initialized", true)
-                        await new TheExpanseQSInitialization().initialize()
+                        await new TheExpanseSOInitialization().initialize()
                         ui.notifications.notify("Initialization Complete")
                     }
                 },
                 update: {
                     label: "Update",
                     callback: async () => {
-                        let updater = await game.the - TheExpanseQSInitialization.apps.ModuleUpdater.create(game.modules.get("the-expanse-salvage-op"), this)
+                        let updater = await game.the - TheExpanseSOInitialization.apps.ModuleUpdater.create(game.modules.get("the-expanse-salvage-op"), this)
                         updater.render(true)
                     }
                 },
@@ -158,13 +158,13 @@ class TheExpanseQSInitialization extends Dialog {
         })
     }
 }
-/* run TheExpanseQSInitializationSetup.setup() in the console of the browser to setup folders */
-class TheExpanseQSInitializationSetup {
+/* run TheExpanseSOInitializationSetup.setup() in the console of the browser to setup folders */
+class TheExpanseSOInitializationSetup {
     static async setup () {
-        TheExpanseQSInitializationSetup.displayFolders();
-        TheExpanseQSInitializationSetup.setFolderFlags();
-        TheExpanseQSInitializationSetup.setSceneNotes();
-        TheExpanseQSInitializationSetup.setEmbeddedEntities();
+        TheExpanseSOInitializationSetup.displayFolders();
+        TheExpanseSOInitializationSetup.setFolderFlags();
+        TheExpanseSOInitializationSetup.setSceneNotes();
+        TheExpanseSOInitializationSetup.setEmbeddedEntities();
     }
 
     static async displayFolders() {
