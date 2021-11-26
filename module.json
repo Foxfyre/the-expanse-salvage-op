@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Charlotte Hamilton",
   "system": [
-    "the_expanse"
+    "expanse"
   ],
   "scripts": [
     "initialization.js"
@@ -16,7 +16,7 @@
       "entity": "Item",
       "name": "items-salvage-op",
       "path": "packs/items-salvage-op.db",
-      "system": "the_expanse",
+      "system": "expanse",
       "tags": [
         "weapons"
       ]
@@ -26,21 +26,21 @@
       "entity": "Actor",
       "name": "actors-salvage-op",
       "path": "packs/actors-salvage-op.db",
-      "system": "the_expanse"
+      "system": "expanse"
     },
     {
       "label": "Journals (Salvage-Op)",
       "entity": "JournalEntry",
       "name": "journals-salvage-op",
       "path": "packs/journals-salvage-op.db",
-      "system": "the_expanse"
+      "system": "expanse"
     },
     {
       "label": "Scenes (Salvage-Op)",
       "entity": "Scene",
       "name": "scenes-salvage-op",
       "path": "packs/scenes-salvage-op.db",
-      "system": "the_expanse"
+      "system": "expanse"
     }
   ],
   "flags": {
@@ -54,7 +54,7 @@
   "languages": [],
   "minimumCoreVersion": "0.8.1",
   "compatibleCoreVersion": "0.8.8",
-  "url": "https://github.com/Foxfyre/the_expanse",
+  "url": "https://github.com/Foxfyre/expanse",
   "manifest": "https://raw.githubusercontent.com/Foxfyre/the-expanse-salvage-op/main/module.json",
   "download": "https://github.com/Foxfyre/the-expanse-salvage-op/releases/download/v0.1.0/the-expanse-salvage-op.zip"
 }
